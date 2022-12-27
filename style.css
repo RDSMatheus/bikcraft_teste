@@ -1,10 +1,16 @@
+:root{
+  --cor-primaria: #e21;
+  --cor-primaria-escura: #900;
+  --cor-de-fundo-escura: #f7f7f7;
+  --cor-de-fundo-clara: #fff;
+}
 *{
   margin: 0;
   padding: 0;
 }
 body{
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f7f7f7;
+  background-color: var(--cor-de-fundo-escura);
   display: grid;
   justify-content: center;
 }
@@ -27,12 +33,12 @@ main{
 .menu a{
   display: inline-block;
   text-decoration: none;
-  background-color: #fff;
+  background-color: var(--cor-de-fundo-clara);
   padding: 1rem 1.5rem;
   color: black;
 }
 .menu a:hover{
-  outline: 1px solid red;
+  outline: 1px solid var(--cor-primaria);
 }
 .grid{
   display: grid;
@@ -44,7 +50,7 @@ p{
 }
 .descricao{
   display: grid;
-  background-color: #fff;
+  background-color: var(--cor-de-fundo-clara);
   padding: 1rem;
   align-items: center;
   text-align: end;
@@ -53,15 +59,15 @@ p{
 }
 .descricao a{
   display: flex;
-  background-color: #ee2211;
+  background-color: var(--cor-primaria);
   text-decoration: none;
-  color: #fff;
+  color: var(--cor-de-fundo-clara);
   place-self: center end;
   padding: 1rem;
   border-radius: 0.2rem;
 }
 .descricao a:hover{
-  background-color: #900;
+  background-color: var(--cor-primaria-escura);
 }
 .descricao h1{
   font-size: 2rem;
@@ -72,7 +78,7 @@ h1::before{
   position: absolute;
   width: 5rem;
   height: .3rem;
-  background-color: #ee2211;
+  background-color: var(--cor-primaria);
   top: 1rem;
   right: -2.5rem;
 }
@@ -84,7 +90,7 @@ h1::before{
 }
 
 .vantagens{
-  background-color: #f7f7f7;
+  background-color: var(--cor-de-fundo-escura);
   font-size: 4rem;
   color: #c6c6c6;
   display: flex;
@@ -99,7 +105,7 @@ h1::before{
 
 }
 .secao-item:nth-child(odd){
-  background-color: #f7f7f7;
+  background-color: var(--cor-de-fundo-escura);
 }
 .secao-item{
   display: grid;
@@ -111,13 +117,13 @@ h1::before{
 
 }
 .secao-item:hover{
-  border-color:#ee2211;
+  border-color:var(--cor-primaria);
 }
  .secao-item p{
   grid-column: 2;
  }
 .rodape{
-  background-color: #fff;
+  background-color: var(--cor-de-fundo-clara);
   height: 2.5rem;
   text-align: center;
   padding: 2rem;
